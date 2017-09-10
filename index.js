@@ -44,6 +44,6 @@ action.on("tahajudTime", function(event) {
   action.body.weekUp();
   
   action.Core.call(doSomething).with({
-    
-  })
+    doSomthing.fetch({ export: action.body, think: action.brain });
+  });
 });
