@@ -3,18 +3,6 @@ const isConst = true;
 let isLet = true;
 let doProvider = [];
 
-function doSomething() {
-  //when do something dont forget to pray
-  action.Pray();
-  
-  action.doSomthing();
-  
-  action.Pray().then(function(do) {
-    do.readQuran();
-    do.Dzikir();
-  });
-}
-
 function sleep() {
   action.Wudlu().then(function(finish) {
     finish.prayAfterWudlu(); 
@@ -27,6 +15,28 @@ function sleep() {
     
     action.body.turn.left();
     action.body.onlyHand.above.body();
+  });
+}
+
+let services = (register, options) => {
+  // let me know who is regist the service
+  this.provide = "Services";
+  this.regist = () => {
+    options.forEach((that) => {
+      console.write.system(that, withDate());
+    });
+  }
+}
+
+function doSomething() {
+  //when do something dont forget to pray
+  action.Pray();
+  
+  action.doSomthing();
+  
+  action.Pray().then(function(do) {
+    do.readQuran();
+    do.Dzikir();
   });
 }
 
