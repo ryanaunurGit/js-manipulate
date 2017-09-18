@@ -1,6 +1,7 @@
 var isVar = true;
 const isConst = true;
 let isLet = true;
+let doProvider = [];
 
 function doSomething() {
   //when do something dont forget to pray
