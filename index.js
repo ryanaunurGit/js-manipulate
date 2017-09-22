@@ -1,7 +1,7 @@
 var isVar = true;
-const isConst = true;
 let isLet = true;
 let doProvider = [];
+const isConst = true;
 
 function sleep() {
   action.Wudlu().then(function(finish) {
