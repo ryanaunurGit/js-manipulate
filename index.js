@@ -2,6 +2,11 @@ var isVar = true;
 let isLet = true;
 let doProvider = [];
 const isConst = true;
+let doings = [];
+let doingsProviders = {
+  service: [],
+  temps: []
+}
 
 function sleep() {
   action.Wudlu().then(function(finish) {
